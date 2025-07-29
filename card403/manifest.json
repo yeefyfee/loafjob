@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "403遮罩切换器",
+  "version": "1.0",
+  "description": "通过快捷键切换403错误遮罩页面",
+  "permissions": ["scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "commands": {
+    "toggle-403-mask": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "切换403遮罩"
+    }
+  }
+}
